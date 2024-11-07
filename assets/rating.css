@@ -1,0 +1,312 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  background: #131518;
+
+}
+
+.rating-container {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  padding: 24px 24px 32px;
+  border-radius: 15px;
+  width: 327px;
+  margin: auto;
+  margin-top: 156px;
+}
+.star {
+  display: inline-block;
+  padding: 13px;
+  background: #262e38;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.rating-text {
+}
+.rating-container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.38px;
+  color: white;
+  margin-bottom: 10px;
+}
+.rating-container p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #969fad;
+  margin-bottom: 24px;
+}
+.rate {
+  display: flex;
+  gap: 18px;
+}
+.rate a {
+  padding: 9px 18px;
+  background: #262e38;
+  color: #969fad;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.17499999701976776px;
+  margin-bottom: 24px;
+}
+/* BUNU BİLGİSAYAR MODUNDA KULLANICAM */
+/* .rate a:hover{
+background-color: #FC7614;
+color:#262E38;
+}
+.rate a:focus{
+  background-color:white;
+} */
+.submit-container {
+  display: flex;
+}
+.submit-container button {
+  width: 100%;
+  background-color: #fc7614;
+  border-radius: 22.5px;
+  padding: 14px 109px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.72px;
+  letter-spacing: 1.8666666746139526px;
+}
+
+.thanks-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  padding: 24px 24px 37px;
+  border-radius: 15px;
+}
+.thanks-container img {
+  width: 144px;
+  height: 96px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.thanks-container .orangeP {
+  margin: auto;
+  padding: 5px 12px;
+  width: 168px;
+  background-color: #262e38;
+  border-radius: 22.5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fc7614;
+  margin-bottom: 24px;
+}
+.thanks-text h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.38px;
+  color: white;
+  margin-bottom: 10px;
+}
+.thanks-text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #969fad;
+}
+
+@media only screen and (min-width: 1024px) {
+  .rating-container {
+    background: radial-gradient(
+      98.96% 98.96% at 50% 0%,
+      #232a34 0%,
+      #181e27 100%
+    );
+    padding: 24px 24px 32px;
+    border-radius: 15px;
+    width: 412px;
+    margin-top: 195px;
+  }
+  .star {
+    display: inline-block;
+    padding: 13px;
+    background: #262e38;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  .rating-text {
+  }
+  .rating-container h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.38px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .rating-container p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #969fad;
+    margin-bottom: 24px;
+  }
+  .rate {
+    display: flex;
+    gap: 17px;
+  }
+  .rate a {
+    padding: 9px 18px;
+    background: #262e38;
+    color: #969fad;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.17499999701976776px;
+    margin-bottom: 24px;
+  }
+  /* BUNU BİLGİSAYAR MODUNDA KULLANICAM */
+   .rate a:hover{
+  background-color: #FC7614;
+  color:#262E38;
+  }
+  .rate a:focus{
+    background-color:white;
+  } 
+  .submit-container {
+    display: flex;
+  }
+  .submit-container button {
+    width: 100%;
+    background-color: #fc7614;
+    border-radius: 22.5px;
+    padding: 14px 109px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.72px;
+    letter-spacing: 1.8666666746139526px;
+  }
+.submit-container button:active{
+  background-color:white;
+}
+  .thanks-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(
+      98.96% 98.96% at 50% 0%,
+      #232a34 0%,
+      #181e27 100%
+    );
+    padding: 24px 24px 37px;
+    border-radius: 15px;
+  }
+  .thanks-container img {
+    width: 144px;
+    height: 96px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  .thanks-container .orangeP {
+    margin: auto;
+    padding: 5px 12px;
+    width: 168px;
+    background-color: #262e38;
+    border-radius: 22.5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fc7614;
+    margin-bottom: 24px;
+  }
+  .thanks-text h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.38px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .thanks-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #969fad;
+  }
+}
